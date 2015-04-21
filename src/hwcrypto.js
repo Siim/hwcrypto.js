@@ -384,3 +384,5 @@ var hwcrypto = (function hwcrypto() {
     fields.INVALID_ARGUMENT = INVALID_ARGUMENT;
     return fields;
 }());
+
+module.exports = hwcrypto;
