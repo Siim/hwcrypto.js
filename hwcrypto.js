@@ -1,4 +1,4 @@
-/*! This is hwcrypto.js 0.0.10 generated on 2015-04-17 */
+/*! This is hwcrypto.js 0.0.10 generated on 2015-04-21 */
 /* DO NOT EDIT (use src/hwcrypto.js) */
 var hwcrypto = function hwcrypto() {
     "use strict";
@@ -323,3 +323,5 @@ var hwcrypto = function hwcrypto() {
     fields.INVALID_ARGUMENT = INVALID_ARGUMENT;
     return fields;
 }();
+
+module.exports = hwcrypto;
