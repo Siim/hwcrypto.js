@@ -1,4 +1,4 @@
-/*! This is hwcrypto.js 0.0.10 generated on 2015-04-21 */
+/*! This is hwcrypto.js 0.0.10 generated on 2015-04-22 */
 /* DO NOT EDIT (use src/hwcrypto.js) */
 var hwcrypto = function hwcrypto() {
     "use strict";
@@ -119,7 +119,8 @@ var hwcrypto = function hwcrypto() {
                     } else {
                         certificate_ids[v.cert] = v.id;
                         resolve({
-                            hex: v.cert
+                            hex: v.cert,
+                            id: v.id
                         });
                     }
                 } catch (ex) {
@@ -324,4 +325,6 @@ var hwcrypto = function hwcrypto() {
     return fields;
 }();
 
-module.exports = hwcrypto;
+if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
+    module.exports = hwcrypto;
+}

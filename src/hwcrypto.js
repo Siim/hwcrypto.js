@@ -386,4 +386,7 @@ var hwcrypto = (function hwcrypto() {
     return fields;
 }());
 
-module.exports = hwcrypto;
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined'){
+    module.exports = hwcrypto;
+}
+
