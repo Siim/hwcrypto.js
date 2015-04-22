@@ -140,7 +140,8 @@ var hwcrypto = (function hwcrypto() {
                             // Store plugin-internal ID
                             certificate_ids[v.cert] = v.id;
                             resolve({
-                                hex: v.cert
+                                hex: v.cert,
+                                id: v.id
                             });
                         }
                     } catch(ex) {
